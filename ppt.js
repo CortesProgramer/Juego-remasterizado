@@ -29,26 +29,26 @@ const duelo = () => {
         crearMensaje(`Puntos del Jugador: ${puntosJugador} - Puntos de la Pc: ${puntosPc}`);
     } else if (pc == piedra && jugador == tijera) {
         puntosPc++;
-        crearMensaje("Jugador elige TIJERA, Pc elige PIEDRA");
+        crearMensaje(`Jugador elige TIJERA, Pc elige PIEDRA`);
         crearMensaje(`Puntos del Jugador: ${puntosJugador} - Puntos de la Pc: ${puntosPc}`);
     } else if (jugador == papel && pc == piedra) {
         puntosJugador++;
-        crearMensaje("Jugador elige PAPEL, Pc elige PIEDRA");
+        crearMensaje(`Jugador elige PAPEL, <c<elige PIEDRA`);
         crearMensaje(`Puntos del Jugador: ${puntosJugador} - Puntos de la Pc: ${puntosPc}`);
     } else if (pc == papel && jugador == piedra) {
         puntosPc++;
-        crearMensaje("Jugador elige PIEDRA, Pc ELIGE PAPEL");
+        crearMensaje(`Jugador elige PIEDRA, Pc ELIGE PAPEL`);
         crearMensaje(`Puntos del Jugador: ${puntosJugador} - Puntos de la Pc: ${puntosPc}`);
     } else if (jugador == tijera && pc == papel) {
         puntosJugador++;
-        crearMensaje("Jugador elige TIJERA, Pc elige PAPEL");
+        crearMensaje(`Jugador elige TIJERA, Pc elige PAPEL`);
         crearMensaje(`Puntos del Jugador: ${puntosJugador} - Puntos de la Pc: ${puntosPc}`);
     } else if (pc == tijera && jugador == papel) {
         puntosPc++;
-        crearMensaje("Jugador elige PAPEL, Pc elige TIJERA");
+        crearMensaje(`Jugador elige PAPEL, <c<elige TIJERA`);
         crearMensaje(`Puntos del Jugador: ${puntosJugador} - Puntos de la Pc: ${puntosPc}`);
     } else {
-        crearMensaje("EMPATE");
+        crearMensaje(`EMPATE`);
         crearMensaje(`Puntos del Jugador: ${puntosJugador} - Puntos de la Pc: ${puntosPc}`);
     }
 }
