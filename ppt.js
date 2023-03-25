@@ -37,7 +37,7 @@ const duelo = () => {
         crearMensaje(`Puntos del Jugador: ${puntosJugador} - Puntos de la Pc: ${puntosPc}`);
     } else if (pc == papel && jugador == piedra) {
         puntosPc++;
-        crearMensaje(`Jugador elige PIEDRA, Pc ELIGE PAPEL`);
+        crearMensaje(`Jugador elige PIEDRA, Pc elige PAPEL`);
         crearMensaje(`Puntos del Jugador: ${puntosJugador} - Puntos de la Pc: ${puntosPc}`);
     } else if (jugador == tijera && pc == papel) {
         puntosJugador++;
