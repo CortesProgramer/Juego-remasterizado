@@ -13,7 +13,7 @@ function elegirBoton() {
 
 let crearMensaje = (mensaje) => {
     let parrafo = document.createElement("p");
-    parrafo.textContent = mensaje;
+    parrafo.innerHTML = mensaje;
     parrafos.appendChild(parrafo)
 }
 
@@ -25,31 +25,31 @@ let puntosPc = 0;
 const duelo = () => {
     if (jugador == piedra && pc == tijera) {
         puntosJugador++;
-        crearMensaje(`Jugador elige PIEDRA, Pc elige TIJERA`);
-        crearMensaje(`Puntos del Jugador: ${puntosJugador} - Puntos de la Pc: ${puntosPc}`);
+        crearMensaje(`<span style="color: blue"><b>Jugador</b></span> elige PIEDRA, <span style="color: red"><b>Pc</b></span> elige TIJERA`);
+        crearMensaje(`Puntos del <span style="color: blue"><b>Jugador</b></span>: ${puntosJugador} - Puntos de la <span style="color: red"><b>Pc</b></span>: ${puntosPc}<br><br>`);
     } else if (pc == piedra && jugador == tijera) {
         puntosPc++;
-        crearMensaje(`Jugador elige TIJERA, Pc elige PIEDRA`);
-        crearMensaje(`Puntos del Jugador: ${puntosJugador} - Puntos de la Pc: ${puntosPc}`);
+        crearMensaje(`<span style="color: blue"><b>Jugador</b></span> elige TIJERA, <span style="color: red"><b>Pc</b></span> elige PIEDRA`);
+        crearMensaje(`Puntos del <span style="color: blue"><b>Jugador</b></span>: ${puntosJugador} - Puntos de la <span style="color: red"><b>Pc</b></span>: ${puntosPc}<br><br>`);
     } else if (jugador == papel && pc == piedra) {
         puntosJugador++;
-        crearMensaje(`Jugador elige PAPEL, Pc elige PIEDRA`);
-        crearMensaje(`Puntos del Jugador: ${puntosJugador} - Puntos de la Pc: ${puntosPc}`);
+        crearMensaje(`<span style="color: blue"><b>Jugador</b></span> elige PAPEL, <span style="color: red"><b>Pc</b></span> elige PIEDRA`);
+        crearMensaje(`Puntos del <span style="color: blue"><b>Jugador</b></span>: ${puntosJugador} - Puntos de la <span style="color: red"><b>Pc</b></span>: ${puntosPc}<br><br>`);
     } else if (pc == papel && jugador == piedra) {
         puntosPc++;
-        crearMensaje(`Jugador elige PIEDRA, Pc elige PAPEL`);
-        crearMensaje(`Puntos del Jugador: ${puntosJugador} - Puntos de la Pc: ${puntosPc}`);
+        crearMensaje(`<span style="color: blue"><b>Jugador</b></span> elige PIEDRA, <span style="color: red"><b>Pc</b></span> elige PAPEL`);
+        crearMensaje(`Puntos del <span style="color: blue"><b>Jugador</b></span>: ${puntosJugador} - Puntos de la <span style="color: red"><b>Pc</b></span>: ${puntosPc}<br><br>`);
     } else if (jugador == tijera && pc == papel) {
         puntosJugador++;
-        crearMensaje(`Jugador elige TIJERA, Pc elige PAPEL`);
-        crearMensaje(`Puntos del Jugador: ${puntosJugador} - Puntos de la Pc: ${puntosPc}`);
+        crearMensaje(`<span style="color: blue"><b>Jugador</b></span> elige TIJERA, <span style="color: red"><b>Pc</b></span> elige PAPEL`);
+        crearMensaje(`Puntos del <span style="color: blue"><b>Jugador</b></span>: ${puntosJugador} - Puntos de la <span style="color: red"><b>Pc</b></span>: ${puntosPc}<br><br>`);
     } else if (pc == tijera && jugador == papel) {
         puntosPc++;
-        crearMensaje(`Jugador elige PAPEL, Pc elige TIJERA`);
-        crearMensaje(`Puntos del Jugador: ${puntosJugador} - Puntos de la Pc: ${puntosPc}`);
+        crearMensaje(`<span style="color: blue"><b>Jugador</b></span> elige PAPEL, <span style="color: red"><b>Pc</b></span> elige TIJERA`);
+        crearMensaje(`Puntos del <span style="color: blue"><b>Jugador</b></span>: ${puntosJugador} - Puntos de la <span style="color: red"><b>Pc</b></span>: ${puntosPc}<br><br>`);
     } else {
-        crearMensaje(`EMPATE`);
-        crearMensaje(`Puntos del Jugador: ${puntosJugador} - Puntos de la Pc: ${puntosPc}`);
+        crearMensaje(`<b>EMPATE</b>`);
+        crearMensaje(`Puntos del <span style="color: blue"><b>Jugador</b></span>: ${puntosJugador} - Puntos de la <span style="color: red"><b>Pc</b></span>: ${puntosPc}<br><br>`);
     }
 }
 
