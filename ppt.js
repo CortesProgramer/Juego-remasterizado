@@ -70,7 +70,7 @@ function preguntar() {
         no.value = "no";
         mensajesFinales.appendChild(no);
         no.addEventListener("click", () => {
-            crearMensaje("hasta luego compa");
+            crearMensaje("Hasta Luego Compa🐱‍👤");
             si.disabled = true;
             no.disabled = true;
         })
@@ -99,4 +99,5 @@ let juego = () => {
 }
 
 juego();
+
 
